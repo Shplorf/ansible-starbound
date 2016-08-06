@@ -7,6 +7,10 @@
     - "{{ starbound_aws_access_key }}"
     - "{{ starbound_aws_secret_key }}"
 
+- name: Fail when S3 bucket name is not present
+  fail: msg="AWS S3 bucket name must be defined (starbound_backup_s3_bucket)"
+  when: starbound_backup_s3_bucket is undefined
+
 - name: Ensure Starbound is stopped
   service:
     name: starbound

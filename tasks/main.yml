@@ -87,7 +87,7 @@
   include: restore.yml
   when: starbound_restore
 
-- name: Ensure Starbound is running
+- name: Ensure Starbound is running and starts on boot
   service:
     name: starbound
     state: started
