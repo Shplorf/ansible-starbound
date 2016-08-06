@@ -1,0 +1,6 @@
+---
+# Name of the S3 bucket you want to store backups in
+starbound_backup_s3_bucket: shplorf-starbound
+
+# Path to local server configuration file
+starbound_server_config_file: files/starbound_server.config

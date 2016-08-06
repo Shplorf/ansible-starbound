@@ -1,0 +1,17 @@
+galaxy_info:
+  author: Greg Malkov
+  description: Role for configuring a Starbound dedicated server and optionally backing the universe up to S3
+
+  license: MIT
+
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: Ubuntu
+   versions:
+   - trusty
+
+  galaxy_tags:
+  - starbound
+  - dedicated
+  - server
