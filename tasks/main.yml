@@ -52,14 +52,14 @@
     creates: /home/steam/steamcmd/steamcmd.sh
 
 - name: Ensure Starbound is installed. Update if starbound_update variable is set.
-  shell: "/home/steam/steamcmd/steamcmd.sh +login {{ steam_user }} {{ steam_pass }} +force_install_dir ../starbound +app_update 211820 +quit"
+  shell: "/home/steam/steamcmd/steamcmd.sh +login {{ starbound_steam_user }} {{ starbound_steam_pass }} +force_install_dir ../starbound +app_update 211820 +quit"
   become_user: steam
   become: yes
   when: starbound_update or fresh_install.changed
 
 - name: Ensure custom configuration is loaded
   copy:
-    src: "{{ server_config_file }}"
+    src: "{{ starbound_server_config_file }}"
     dest: /home/steam/starbound/storage/starbound_server.config
     owner: steam
   register: server_config

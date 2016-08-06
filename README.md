@@ -52,7 +52,7 @@ With S3 backup:
   roles:
     - {
       role: gregmalkov.starbound,
-      starbound_backup_s3_bucket: my-starbound-bucket-name
+      starbound_backup_s3_bucket: my-starbound-bucket-name,
       starbound_server_config_file: files/starbound_server.config
     }
 ```

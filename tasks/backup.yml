@@ -24,8 +24,8 @@
     src: /home/steam/starbound/storage/universe.zip
     object: universe.zip
     bucket: "{{ backup_s3_bucket }}"
-    aws_access_key: "{{ aws_access_key }}"
-    aws_secret_key: "{{ aws_secret_key }}"
+    aws_access_key: "{{ starbound_aws_access_key }}"
+    aws_secret_key: "{{ starbound_aws_secret_key }}"
 
 - name: Ensure universe archive is removed
   file:
