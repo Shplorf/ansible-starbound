@@ -23,6 +23,7 @@ SB_START_PATH="${SBPATH}/linux"
 INVOCATION=" ${SERVICE} ${OPTIONS}"
 STEAMPATH='/home/steam'
 STEAMUSER="{{ steam_user }}"
+STEAMPASS="{{ steam_pass }}"
 SLEEP_TIME=7
 ME=$(whoami)
 
@@ -70,7 +71,6 @@ sb_update() {
         echo "[$(date +%Y-%m-%H\ %k:%M:%S)] ${SERVICE} is running! Will not start update."
     else
         cd ${STEAMPATH}
-        read -s -p "Enter Steam Password: " STEAMPASS
         as_user "cd ${STEAMPATH} && ./steamcmd.sh +login ${STEAMUSER} ${STEAMPASS} +force_install_dir ${SBPATH} +app_update 211820 +exit"
         echo "[$(date +%Y-%m-%H\ %k:%M:%S)] Starbound was updated (hopefully)."
     fi
