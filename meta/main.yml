@@ -15,3 +15,5 @@ galaxy_info:
   - starbound
   - dedicated
   - server
+
+  dependencies: []
