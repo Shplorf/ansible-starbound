@@ -30,7 +30,7 @@ Example Playbooks
 -----------------
 
 Without S3 backup:
-
+```
 - hosts: server
   pre_tasks:
     - include_vars:
@@ -40,9 +40,9 @@ Without S3 backup:
       role: gregmalkov.starbound,
       starbound_server_config_file: files/starbound_server.config
     }
-
+```
 With S3 backup:
-
+```
 - hosts: server
   pre_tasks:
     - include_vars:
@@ -53,7 +53,7 @@ With S3 backup:
       starbound_backup_s3_bucket: my-starbound-bucket-name
       starbound_server_config_file: files/starbound_server.config
     }
-
+```
 License
 -------
 
