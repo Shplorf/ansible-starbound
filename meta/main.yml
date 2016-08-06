@@ -8,11 +8,10 @@ galaxy_info:
 
   platforms:
   - name: Ubuntu
-   versions:
-   - trusty
+    versions:
+    - trusty
 
   galaxy_tags:
   - starbound
   - dedicated
   - server
-  
