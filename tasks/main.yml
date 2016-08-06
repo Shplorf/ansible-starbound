@@ -92,4 +92,3 @@
     name: starbound
     state: started
     enabled: true
-  become_user: steam
