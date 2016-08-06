@@ -3,10 +3,14 @@ Starbound Dedicated Server
 
 Role for configuring a Starbound dedicated server and optionally backing the universe up to S3
 
+Supported platforms: Ubuntu 14.04.5 LTS (Trusty Tahr)
+
+[![Build Status](https://travis-ci.org/Shplorf/ansible-starbound.svg?branch=master)](https://travis-ci.org/Shplorf/ansible-starbound)
+
 Requirements
 ------------
 
-Ansible should be configured tp [allow pipelining](https://docs.ansible.com/ansible/intro_configuration.html#pipelining).
+Ansible should be configured to [allow pipelining](https://docs.ansible.com/ansible/intro_configuration.html#pipelining).
 
 Steam username and password should be defined (see variables section below).
 For this role to work, the Steam account cannot have Steam Guard on (otherwise steamcmd will prompt for an access code that is emailed to you, no easy way to automate that). Because of this I recommed having a dedicated Steam account that only owns Starbound, and using that account's credentials. I repeat, I DO NOT RECOMMEND TURNING STEAM GUARD OFF ON YOUR MAIN ACCOUNT.
