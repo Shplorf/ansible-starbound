@@ -70,13 +70,14 @@
     dest: /etc/init.d/starbound
     mode: 0777
     owner: steam
+  register: service_script
 
-- name: Ensure Starbound is restarted if configuration changed
+- name: Ensure Starbound is restarted if configuration or service script changed
   service:
     name: starbound
     state: restarted
   become_user: steam
-  when: server_config.changed
+  when: server_config.changed or service_script.changed
 
 - name: Ensure that the universe is backed up if the backup variable is set
   include: backup.yml
