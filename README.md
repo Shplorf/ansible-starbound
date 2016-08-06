@@ -2,6 +2,7 @@ Starbound Dedicated Server
 ==========================
 
 Role for configuring a Starbound dedicated server and optionally backing the universe up to S3
+
 Supported platforms: Ubuntu 14.04.5 LTS (Trusty Tahr)
 
 [![Build Status](https://travis-ci.org/Shplorf/ansible-starbound.svg?branch=master)](https://travis-ci.org/Shplorf/ansible-starbound)
