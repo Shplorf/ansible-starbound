@@ -7,6 +7,10 @@ Supported platforms: Ubuntu 14.04.5 LTS (Trusty Tahr)
 
 [![Build Status](https://travis-ci.org/Shplorf/ansible-starbound.svg?branch=master)](https://travis-ci.org/Shplorf/ansible-starbound)
 
+This role is published on Ansible Galaxy, and can be installed with the following command:
+
+```ansible-galaxy install Shplorf.starbound```
+
 Requirements
 ------------
 Ansible should be configured to [allow pipelining](https://docs.ansible.com/ansible/intro_configuration.html#pipelining).
