@@ -87,12 +87,19 @@ With EC2 dynamic inventory and S3 backup:
 Example Commands
 ----------------
 Execute one of the above playbooks with the goal of ensuring a Starbound server is up and running:
+
 ```ansible-playbook main.yml```
+
 Execute one of the above playbooks with the goal of ensuring a Starbound server is up and running AND running the latest version of the dedicated server:
+
 ```ansible-playbook main.yml --extra-vars "starbound_update=true"```
+
 Execute one of the above playbooks with the goal of ensuring a Starbound server is up and running AND back up the current universe to S3:
+
 ```ansible-playbook main.yml --extra-vars "starbound_backup=true"```
+
 Execute one of the above playbooks with the goal of ensuring a Starbound server is up and running AND restore the most recent universe version from S3:
+
 ```ansible-playbook main.yml --extra-vars "starbound_restore=true"```
 
 License
